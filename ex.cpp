@@ -20,7 +20,19 @@ void printInformation (Student student) {
 
 int main()
 {
-    Student ivan = {1, "ivan", "popov", 3.2, 'b'};
+    //Student ivan = {1, "ivan", "popov", 3.2, 'b'};
+    Student ivan;
+    cout << "Type student number: " << endl;
+    cin >> ivan.studentNumber;
+    cout << "Type student name: " << endl;
+    cin >> ivan.studentName;
+    cout << "Type student surname: " << endl;
+    cin >> ivan.studentSurname;
+    cout << "Type student average mark: " << endl;
+    cin >> ivan.averMark;
+    cout << "Type student group: " << endl;
+    cin >> ivan.group;
+    
     printInformation (ivan);
 
     return 0;
